@@ -87,8 +87,8 @@ header{
 }
 
 .la-big-pic {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background-color: #000;
+  color: #fff; 
   font-size: 20px;
   font-weight: bold;
   padding: 5px 12px;
@@ -137,7 +137,6 @@ main .boutons{
   margin: 10px 0;
 }
 
-/* Assurez-vous que chaque slide occupe un tiers de la largeur du conteneur */
 .sliderInfos {
   display: flex;
   flex-wrap: nowrap;
@@ -146,12 +145,11 @@ main .boutons{
 }
 
 .slides {
-  flex: 0 0 33.3333%; /* Chaque slide prend un tiers de l'espace */
+  flex: 0 0 33.3333%;
   scroll-snap-align: start;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Rest of the CSS remains the same */
 .sliderIndicators {
   display: flex;
   justify-content: center;
@@ -163,21 +161,20 @@ main .boutons{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: gray; /* Couleur par défaut */
+  background-color: gray;
 }
 
 .indicator.active {
-  background-color: black; /* Couleur pour l'indicateur actif */
+  background-color: black;
 }
 
-/* Cachez les barres de défilement pour une meilleure apparence */
 .sliderInfos::-webkit-scrollbar {
   display: none;
 }
 
 .sliderInfos {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .slides img {
@@ -199,12 +196,12 @@ main .boutons{
 }
 @keyframes apparition {
   0% {
-    transform: translateY(200px); /* Commence en dessous */
-    opacity: 0; /* Commence invisible */
+    transform: translateY(200px); 
+    opacity: 0;
   }
   100% {
-    transform: translateY(0); /* Se déplace à la position initiale */
-    opacity: 1; /* Devient visible */
+    transform: translateY(0);
+    opacity: 1; 
   }
 }
 
@@ -213,14 +210,14 @@ main .boutons{
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px); /* Flotte vers le haut */
+    transform: translateY(-20px); 
   }
 }
 
 .absolut div {
   position: absolute;
   animation: apparition 3s ease-in-out forwards, flottement 3s ease-in-out infinite;
-  animation-delay: 0s, 3s; /* Commence le flottement après l'apparition */
+  animation-delay: 0s, 3s;
 }
 
 .absolut div img{

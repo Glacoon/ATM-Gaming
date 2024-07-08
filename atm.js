@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         isScrolling = setTimeout(function() {
             const scrollLeft = slider.scrollLeft;
             const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-            const groupWidth = slider.clientWidth; // Largeur d'un groupe de slides
+            const groupWidth = slider.clientWidth;
             const currentGroup = Math.round(scrollLeft / groupWidth);
 
             updateIndicators(currentGroup);
